@@ -21,6 +21,7 @@ layers:
   data: [domain, config]                  # saveload (de)serialises the model; no GUI, no logic
   domain: [config]                        # the model includes no logic, GUI or saveload
   config: []
+  tests: [entry, api, service, integration, data, domain, config]   # test code may exercise any layer
 cross_cutting: [utils]
 forbidden_edges:
   - id: model-no-gui
